@@ -258,7 +258,7 @@ void Monte::print_res(std::vector<std::vector<int> >& score) {
 
     for (int i = 0; i < this->n_players; i++) {
         double d1 = score.at(i).at(0);
-        int d2 = score.at(i).at(1);
+        double d2 = score.at(i).at(1);
         std::cout << "Player " << (i+1) << " Wins:   " << score.at(i).at(0) << " --- " << ((d1 / this->sim_iterations) * 100) << "%" <<  std::endl;
         std::cout << "Player " << (i+1) << " Splits: " << score.at(i).at(1) << " --- " << ((d2 / this->sim_iterations) * 100) << "%" <<  std::endl;
         std::cout << std::endl;
